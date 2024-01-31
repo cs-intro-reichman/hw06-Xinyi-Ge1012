@@ -93,7 +93,6 @@ public class Runigram {
 	 * Returns an image which is the horizontally flipped version of the given image. 
 	 */
 	public static Color[][] flippedHorizontally(Color[][] image) {
-		//// Replace the following statement with your code
 		int row = image.length;
 		int col = image[0].length;
 		Color[][] flippedHorizontally = new Color[row][col];
