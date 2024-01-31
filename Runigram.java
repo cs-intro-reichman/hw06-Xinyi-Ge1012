@@ -22,9 +22,13 @@ public class Runigram {
 		System.out.println();
 		print(imageOut);
 		
-		imageOut = flippedVertically(tinypic);
+		imageOut = grayScaled(tinypic);
 		System.out.println();
 		print(imageOut);
+
+		//imageOut =scaled(tinypic,3, 5 );
+		//System.out.println();
+		//print(imageOut);
 
 		//// Write here whatever code you need in order to test your work.
 		//// You can reuse / overide the contents of the imageOut array.
@@ -214,7 +218,7 @@ public class Runigram {
 			alpha = (double)(n - i) / (double)n;
 			morphed = blend(source, scaledTarget, alpha);
 			display(morphed);
-			StdDraw.pause(10);
+			StdDraw.pause(500);
 		}
 		display(scaledTarget);
 		display(scaledTarget);
