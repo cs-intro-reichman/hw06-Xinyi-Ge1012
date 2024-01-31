@@ -152,8 +152,8 @@ public class Runigram {
 		int h0 = image.length;
 		int w0 = image[0].length;
 		Color[][] scaled = new Color[height][width];
-		double hRatio = (double)h0 / height;
-		double wRatio = (double)w0 / width;
+		double hRatio = (double)h0 / (double)height;
+		double wRatio = (double)w0 / (double)width;
 		for(int i = 0; i < height; i++){
 			for(int j = 0; j < width; j++){
 				scaled[i][j] = image[(int)(i * hRatio)][(int)(j * wRatio)];
