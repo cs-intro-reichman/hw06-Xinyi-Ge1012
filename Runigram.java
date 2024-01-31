@@ -218,7 +218,7 @@ public class Runigram {
 			alpha = (double)(n - i) / (double)n;
 			morphed = blend(source, scaledTarget, alpha);
 			display(morphed);
-			StdDraw.pause(500);
+			StdDraw.pause(10);
 		}
 		display(scaledTarget);
 		display(scaledTarget);
